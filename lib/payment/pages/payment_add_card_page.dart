@@ -75,6 +75,8 @@ class PaymentAddCardPage extends StatelessWidget {
                 validator: (v) {
                   if (v!.isEmpty) {
                     return 'please fill out this field.';
+                  } else if (v.length < 16) {
+                    return 'card number must be at least 16 digits.';
                   } else {
                     return null;
                   }
