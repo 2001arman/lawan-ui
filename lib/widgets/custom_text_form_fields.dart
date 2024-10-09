@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../constants/constants_ui.dart';
 
@@ -18,6 +19,7 @@ class CustomTextFormField extends StatefulWidget {
     this.margin = 12,
     this.borderColor,
     this.prefix,
+    this.inputFormatters,
   });
 
   final String hintText;
@@ -31,6 +33,7 @@ class CustomTextFormField extends StatefulWidget {
   final Widget? suffix, prefix;
   final double margin;
   final Color? borderColor;
+  final List<TextInputFormatter>? inputFormatters;
 
   @override
   // ignore: library_private_types_in_public_api
@@ -139,6 +142,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
                   ),
                   maxLines: widget.minLines,
                   keyboardType: widget.textInputType,
+                  inputFormatters: widget.inputFormatters,
                 ),
         ],
       ),
