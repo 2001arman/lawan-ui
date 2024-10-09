@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:lawan_ui/payment/pages/payment_page.dart';
+import 'package:lawan_ui/lobby/pages/lobby_ui.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const PaymentPage(),
+      home: LobbyUi(),
     );
   }
 }
