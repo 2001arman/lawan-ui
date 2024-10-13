@@ -10,10 +10,10 @@ class LobbyState {
   ];
 
   var activeAlignment = Alignment.centerLeft.obs;
-  var tabActive = 'Details'.obs;
+  var tabActive = 'Home'.obs;
   List<String> tabBarTitle = [
-    'Details',
-    'Hour',
-    'Rate',
+    'Home',
+    'Referee',
+    'Away',
   ];
 }

@@ -19,6 +19,24 @@ TextStyle blackTextStyle = TextStyle(
   color: kBlackColor,
 );
 
+TextStyle blacklobbyTextStyle = TextStyle(
+  fontFamily: 'Lufga',
+  color: kBlackColor,
+  fontSize: 10
+);
+
+TextStyle blackinvitationTextStyle = TextStyle(
+  fontFamily: 'Lufga',
+  color: kBlackColor,
+  fontSize: 10
+);
+
+TextStyle iconTextStyle = TextStyle(
+  fontFamily: 'Lufga',
+  fontWeight: FontWeight.w500,
+  fontSize: 50
+);
+
 TextStyle whiteTextStyle = TextStyle(
   fontFamily: 'Lufga',
   color: kWhiteColor,
